@@ -42,6 +42,7 @@
     <Compile Include="bookmark\migrations\__init__.py" />
     <Compile Include="bookmark\models.py" />
     <Compile Include="bookmark\tests.py" />
+    <Compile Include="bookmark\urls.py" />
     <Compile Include="bookmark\views.py" />
     <Compile Include="bookmark\__init__.py" />
     <Compile Include="manage.py" />
@@ -59,12 +60,13 @@
     <Folder Include="bookmark\" />
     <Folder Include="bookmark\migrations\" />
     <Folder Include="bookmark\templates\" />
+    <Folder Include="bookmark\templates\bookmark\" />
     <Folder Include="SoftwareBake\" />
     <Folder Include="SoftwareBake\templates\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="blog\templates\blog\index.html" />
-    <Content Include="bookmark\templates\index.html" />
+    <Content Include="bookmark\templates\bookmark\index.html" />
     <Content Include="requirements.txt" />
     <Content Include="db.sqlite3" />
   </ItemGroup>
