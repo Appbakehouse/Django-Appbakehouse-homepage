@@ -59,6 +59,7 @@ ROOT_URLCONF = 'SoftwareBake.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
+        # template used for the all apps , check this template first then check apps' templates
         'DIRS': [
                             os.path.join(BASE_DIR, 'SoftwareBake', 'templates'),
                 ],
@@ -112,7 +113,8 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+#TIME_ZONE = 'UTC'
+TIME_ZONE = 'Asia/Seoul'
 
 USE_I18N = True
 
