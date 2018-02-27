@@ -66,6 +66,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="blog\templates\blog\index.html" />
+    <Content Include="bookmark\templates\bookmark\bookmark_detail.html" />
+    <Content Include="bookmark\templates\bookmark\bookmark_list.html" />
     <Content Include="bookmark\templates\bookmark\index.html" />
     <Content Include="requirements.txt" />
     <Content Include="db.sqlite3" />

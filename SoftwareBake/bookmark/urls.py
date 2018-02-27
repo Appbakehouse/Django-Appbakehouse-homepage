@@ -1,12 +1,12 @@
 from django.conf.urls import url
 
 from . import views
+from bookmark.views import IndexView , DetailView
 
 #app_name = 'bookmark'
 urlpatterns = [
 
-    url(r'^$', views.index, name='index'),
-    #url(r'^(?P<pk>[0-9]+)/$', views.DetailView.as_view(), name='detail'),
-    #url(r'^(?P<pk>[0-9]+)/results/$', views.ResultsView.as_view(), name='results'),
-    #url(r'^(?P<question_id>[0-9]+)/vote/$', views.vote, name='vote'),
+    # Class-based views for Bookmark app
+    url(r'^$', IndexView.as_view(), name='index'),
+    url(r'^(?P<pk>\d+)/$', DetailView.as_view(), name='detail'),
 ]
