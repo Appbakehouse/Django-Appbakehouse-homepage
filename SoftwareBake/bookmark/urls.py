@@ -3,7 +3,7 @@ from django.conf.urls import url
 from . import views
 from bookmark.views import IndexView , DetailView
 
-#app_name = 'bookmark'
+app_name = 'bookmark'
 urlpatterns = [
 
     # Class-based views for Bookmark app
