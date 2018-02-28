@@ -56,6 +56,8 @@
   <ItemGroup>
     <Folder Include="blog\" />
     <Folder Include="blog\migrations\" />
+    <Folder Include="blog\static\" />
+    <Folder Include="blog\static\tagging\" />
     <Folder Include="blog\templates\" />
     <Folder Include="blog\templates\blog\" />
     <Folder Include="blog\templates\tagging\" />
@@ -70,6 +72,7 @@
     <Folder Include="static\img\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="blog\static\tagging\tag.css" />
     <Content Include="blog\templates\blog\post_all.html" />
     <Content Include="blog\templates\blog\post_archive.html" />
     <Content Include="blog\templates\blog\post_archive_day.html" />
