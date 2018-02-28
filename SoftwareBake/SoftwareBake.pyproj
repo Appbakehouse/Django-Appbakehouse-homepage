@@ -65,7 +65,12 @@
     <Folder Include="SoftwareBake\templates\" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="blog\templates\blog\index.html" />
+    <Content Include="blog\templates\blog\post_all.html" />
+    <Content Include="blog\templates\blog\post_archive.html" />
+    <Content Include="blog\templates\blog\post_archive_day.html" />
+    <Content Include="blog\templates\blog\post_archive_month.html" />
+    <Content Include="blog\templates\blog\post_archive_year.html" />
+    <Content Include="blog\templates\blog\post_detail.html" />
     <Content Include="bookmark\templates\bookmark\bookmark_detail.html" />
     <Content Include="bookmark\templates\bookmark\bookmark_list.html" />
     <Content Include="bookmark\templates\bookmark\index.html" />
