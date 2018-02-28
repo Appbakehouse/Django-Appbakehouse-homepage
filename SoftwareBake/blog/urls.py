@@ -29,4 +29,10 @@ urlpatterns = [
 
     ## Example: /today/
     url(r'^today/$', PostTodayArchiveView.as_view(), name='post_today_archive'),
+
+    # Example: /tag/
+    url(r'^tag/$', TagTemplateView.as_view(), name='tag_cloud'),  
+
+    # Example: /tag/tagname/
+    url(r'^tag/(?P<tag>[^/]+(?u))/$', PostTagTemplateView.as_view(), name='tagged_object_list'),
 ]
