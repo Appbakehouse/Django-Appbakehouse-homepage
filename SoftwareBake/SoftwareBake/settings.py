@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    # My apps
     'blog.apps.blogConfig',
     'bookmark.apps.bookmarkConfig',
     'tagging.apps.TaggingConfig',
@@ -136,4 +137,4 @@ STATIC_URL = '/static/'
 #STATIC_ROOT = posixpath.join(*(BASE_DIR.split(os.path.sep) + ['static']))
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
 
-
+LOGIN_REDIRECT_URL = '/'

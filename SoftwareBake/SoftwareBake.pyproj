@@ -66,6 +66,7 @@
     <Folder Include="bookmark\migrations\" />
     <Folder Include="bookmark\templates\" />
     <Folder Include="bookmark\templates\bookmark\" />
+    <Folder Include="SoftwareBake\templates\registration\" />
     <Folder Include="static\" />
     <Folder Include="SoftwareBake\" />
     <Folder Include="SoftwareBake\templates\" />
@@ -90,7 +91,14 @@
     <Content Include="db.sqlite3" />
     <Content Include="SoftwareBake\templates\base.html" />
     <Content Include="SoftwareBake\templates\home.html" />
+    <Content Include="SoftwareBake\templates\registration\logged_out.html" />
+    <Content Include="SoftwareBake\templates\registration\login.html" />
+    <Content Include="SoftwareBake\templates\registration\password_change_done.html" />
+    <Content Include="SoftwareBake\templates\registration\password_change_form.html" />
+    <Content Include="SoftwareBake\templates\registration\register.html" />
+    <Content Include="SoftwareBake\templates\registration\register_done.html" />
     <Content Include="static\css\base.css" />
+    <Content Include="static\css\forms.css" />
     <Content Include="static\css\home.css" />
     <Content Include="static\img\main.jpg" />
   </ItemGroup>
