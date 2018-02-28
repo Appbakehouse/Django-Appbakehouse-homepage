@@ -42,7 +42,12 @@ INSTALLED_APPS = [
     'blog.apps.blogConfig',
     'bookmark.apps.bookmarkConfig',
     'tagging.apps.TaggingConfig',
+    'disqus',
+    'django.contrib.sites',
 ]
+
+DISQUS_WEBSITE_SHORTNAME = 'http-www-softwarebake-com'
+SITE_ID = 1
 
 MIDDLEWARE_CLASSES = [
     #'django.middleware.security.SecurityMiddleware',
