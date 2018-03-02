@@ -80,11 +80,17 @@
     <Content Include="blog\templates\blog\post_archive_day.html" />
     <Content Include="blog\templates\blog\post_archive_month.html" />
     <Content Include="blog\templates\blog\post_archive_year.html" />
+    <Content Include="blog\templates\blog\post_change_list.html" />
+    <Content Include="blog\templates\blog\post_confirm_delete.html" />
     <Content Include="blog\templates\blog\post_detail.html" />
+    <Content Include="blog\templates\blog\post_form.html" />
     <Content Include="blog\templates\blog\post_search.html" />
     <Content Include="blog\templates\tagging\tagging_cloud.html" />
     <Content Include="blog\templates\tagging\tagging_post_list.html" />
+    <Content Include="bookmark\templates\bookmark\bookmark_change_list.html" />
+    <Content Include="bookmark\templates\bookmark\bookmark_confirm_delete.html" />
     <Content Include="bookmark\templates\bookmark\bookmark_detail.html" />
+    <Content Include="bookmark\templates\bookmark\bookmark_form.html" />
     <Content Include="bookmark\templates\bookmark\bookmark_list.html" />
     <Content Include="bookmark\templates\bookmark\index.html" />
     <Content Include="requirements.txt" />
