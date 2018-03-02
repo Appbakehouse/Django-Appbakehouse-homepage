@@ -58,7 +58,7 @@
     <Compile Include="photo\views.py" />
     <Compile Include="photo\__init__.py" />
     <Compile Include="SoftwareBake\tests.py" />
-    <Compile Include="SoftwareBake\view.py" />
+    <Compile Include="SoftwareBake\views.py" />
     <Compile Include="SoftwareBake\__init__.py" />
     <Compile Include="SoftwareBake\settings.py" />
     <Compile Include="SoftwareBake\urls.py" />
