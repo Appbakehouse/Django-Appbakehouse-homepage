@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     # My apps
     'blog.apps.blogConfig',
     'bookmark.apps.bookmarkConfig',
+    'photo.apps.photoConfig',
     'tagging.apps.TaggingConfig',
     'disqus',
     'django.contrib.sites',
@@ -136,5 +137,8 @@ USE_TZ = True
 STATIC_URL = '/static/'
 #STATIC_ROOT = posixpath.join(*(BASE_DIR.split(os.path.sep) + ['static']))
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
+
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 LOGIN_REDIRECT_URL = '/'

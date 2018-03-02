@@ -47,6 +47,13 @@
     <Compile Include="bookmark\views.py" />
     <Compile Include="bookmark\__init__.py" />
     <Compile Include="manage.py" />
+    <Compile Include="photo\admin.py" />
+    <Compile Include="photo\apps.py" />
+    <Compile Include="photo\migrations\__init__.py" />
+    <Compile Include="photo\models.py" />
+    <Compile Include="photo\tests.py" />
+    <Compile Include="photo\views.py" />
+    <Compile Include="photo\__init__.py" />
     <Compile Include="SoftwareBake\tests.py" />
     <Compile Include="SoftwareBake\view.py" />
     <Compile Include="SoftwareBake\__init__.py" />
@@ -66,6 +73,9 @@
     <Folder Include="bookmark\migrations\" />
     <Folder Include="bookmark\templates\" />
     <Folder Include="bookmark\templates\bookmark\" />
+    <Folder Include="photo\" />
+    <Folder Include="photo\migrations\" />
+    <Folder Include="photo\templates\" />
     <Folder Include="SoftwareBake\templates\registration\" />
     <Folder Include="static\" />
     <Folder Include="SoftwareBake\" />
@@ -93,6 +103,7 @@
     <Content Include="bookmark\templates\bookmark\bookmark_form.html" />
     <Content Include="bookmark\templates\bookmark\bookmark_list.html" />
     <Content Include="bookmark\templates\bookmark\index.html" />
+    <Content Include="photo\templates\index.html" />
     <Content Include="requirements.txt" />
     <Content Include="db.sqlite3" />
     <Content Include="SoftwareBake\templates\base.html" />
