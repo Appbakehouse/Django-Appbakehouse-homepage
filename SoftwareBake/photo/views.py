@@ -27,7 +27,7 @@ class PhotoCreateView(LoginRequiredMixin, CreateView):
         form.instance.owner = self.request.user
         return super(PhotoCreateView, self).form_valid(form)
 
-class PhotoChangeLV(LoginRequiredMixin, ListView):
+class PhotoChangeListView(LoginRequiredMixin, ListView):
     template_name = 'photo/photo_change_list.html'
 
     def get_queryset(self):
@@ -44,7 +44,7 @@ class PhotoDeleteView(LoginRequiredMixin, DeleteView) :
 
 #--- Add/Change/Update/Delete for Album
 #--- Change/Delete for Album
-class AlbumChangeLV(LoginRequiredMixin, ListView):
+class AlbumChangeListView(LoginRequiredMixin, ListView):
     template_name = 'photo/album_change_list.html'
 
     def get_queryset(self):
@@ -60,12 +60,12 @@ class AlbumDeleteView(LoginRequiredMixin, DeleteView) :
 from django.shortcuts import redirect
 from photo.forms import PhotoInlineFormSet
 
-class AlbumPhotoCV(LoginRequiredMixin, CreateView):
+class AlbumPhotoCreateView(LoginRequiredMixin, CreateView):
     model = Album
     fields = ['name', 'description']
 
     def get_context_data(self, **kwargs):
-        context = super(AlbumPhotoCV, self).get_context_data(**kwargs)
+        context = super(AlbumPhotoCreateView, self).get_context_data(**kwargs)
         if self.request.POST:
             context['formset'] = PhotoInlineFormSet(self.request.POST, self.request.FILES)
         else:
@@ -86,7 +86,7 @@ class AlbumPhotoCV(LoginRequiredMixin, CreateView):
         else:
             return self.render_to_response(self.get_context_data(form=form))
 
-class AlbumPhotoUV(LoginRequiredMixin, UpdateView):
+class AlbumPhotoUpdateView(LoginRequiredMixin, UpdateView):
     model = Album
     fields = ['name', 'description']
 

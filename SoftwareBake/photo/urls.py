@@ -18,17 +18,17 @@ urlpatterns = [
 
     # Example: /album/add/
     url(r'^album/add/$',
-        AlbumPhotoCV.as_view(), name="album_add",
+        AlbumPhotoCreateView.as_view(), name="album_add",
     ),
 
     # Example: /album/change/
     url(r'^album/change/$',
-        AlbumChangeLV.as_view(), name="album_change",
+        AlbumChangeListView.as_view(), name="album_change",
     ),
 
     # Example: /album/99/update/
     url(r'^album/(?P<pk>[0-9]+)/update/$',
-        AlbumPhotoUV.as_view(), name="album_update",
+        AlbumPhotoUpdateView.as_view(), name="album_update",
     ),
 
     # Example: /album/99/delete/
@@ -43,7 +43,7 @@ urlpatterns = [
 
     # Example: /photo/change/
     url(r'^photo/change/$',
-        PhotoChangeLV.as_view(), name="photo_change",
+        PhotoChangeListView.as_view(), name="photo_change",
     ),
 
     # Example: /photo/99/update/
