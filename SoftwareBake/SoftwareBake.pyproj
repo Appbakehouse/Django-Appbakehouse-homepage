@@ -118,9 +118,15 @@
     <Content Include="media\photo\2018\03\jisan_chajin_oh.jpg" />
     <Content Include="media\photo\2018\03\jisan_chajin_oh.thumb.jpg" />
     <Content Include="photo\static\photo\photo.css" />
+    <Content Include="photo\templates\photo\album_change_list.html" />
+    <Content Include="photo\templates\photo\album_confirm_delete.html" />
     <Content Include="photo\templates\photo\album_detail.html" />
+    <Content Include="photo\templates\photo\album_form.html" />
     <Content Include="photo\templates\photo\album_list.html" />
+    <Content Include="photo\templates\photo\photo_change_list.html" />
+    <Content Include="photo\templates\photo\photo_confirm_delete.html" />
     <Content Include="photo\templates\photo\photo_detail.html" />
+    <Content Include="photo\templates\photo\photo_form.html" />
     <Content Include="requirements.txt" />
     <Content Include="db.sqlite3" />
     <Content Include="SoftwareBake\templates\base.html" />
