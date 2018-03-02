@@ -17,7 +17,7 @@ urlpatterns = [
 
     # Example: /change/
     url(r'^change/$',
-        BookmarkChangeLV.as_view(), name="change",
+        BookmarkChangeListView.as_view(), name="change",
     ),
 
     # Example: /99/update/

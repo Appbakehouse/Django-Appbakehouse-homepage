@@ -22,7 +22,7 @@ class BookmarkCreateView(LoginRequiredMixin, CreateView):
         form.instance.owner = self.request.user
         return super(BookmarkCreateView, self).form_valid(form)
 
-class BookmarkChangeLV(LoginRequiredMixin, generic.ListView):
+class BookmarkChangeListView(LoginRequiredMixin, generic.ListView):
     template_name = 'bookmark/bookmark_change_list.html'
 
     def get_queryset(self):
