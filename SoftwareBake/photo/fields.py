@@ -20,14 +20,31 @@ class ThumbnailImageFieldFile(ImageFieldFile):
 
     def save(self, name, content, save=True):
         super(ThumbnailImageFieldFile, self).save(name, content, save)
-        img = Image.open(self.path)
+        image = Image.open(self.path)
 
         size = (128, 128)
-        img.thumbnail(size, Image.ANTIALIAS)
-        background = Image.new('RGBA', size, (255, 255, 255, 0))
-        background.paste(
-            img, ( int((size[0] - img.size[0]) / 2), int((size[1] - img.size[1]) / 2) ) )
-        background.save(self.thumb_path, 'JPEG')
+        image.thumbnail(size, Image.ANTIALIAS)
+
+        if image.mode in ('RGBA', 'LA'):
+            background = Image.new(image.mode[:-1], image.size, fill_color)
+            background.paste(image, image.split()[-1])
+            image = background
+            
+        image.save(self.thumb_path, 'JPEG') #, quality=95)
+
+        #hint code 
+        #fill_color = ''  # your background
+        #image = Image.open(file_path)
+        #if image.mode in ('RGBA', 'LA'):
+        #    background = Image.new(image.mode[:-1], image.size, fill_color)
+        #    background.paste(image, image.split()[-1])
+        #    image = background
+        #image.save(hidpi_path, file_type, quality=95)
+
+        #before
+        #background = Image.new('RGBA', size, (255, 255, 255, 0))
+        #background.paste(img, ( int((size[0] - img.size[0]) / 2), int((size[1] - img.size[1]) / 2) ) )
+        #background.save(self.thumb_path, 'JPEG')
 
     def delete(self, save=True):
         if os.path.exists(self.thumb_path):
