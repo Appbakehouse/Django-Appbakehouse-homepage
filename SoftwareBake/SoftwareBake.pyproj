@@ -50,6 +50,7 @@
     <Compile Include="photo\admin.py" />
     <Compile Include="photo\apps.py" />
     <Compile Include="photo\fields.py" />
+    <Compile Include="photo\forms.py" />
     <Compile Include="photo\migrations\__init__.py" />
     <Compile Include="photo\models.py" />
     <Compile Include="photo\tests.py" />
