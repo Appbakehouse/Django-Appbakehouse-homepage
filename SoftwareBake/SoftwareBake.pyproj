@@ -53,6 +53,7 @@
     <Compile Include="photo\migrations\__init__.py" />
     <Compile Include="photo\models.py" />
     <Compile Include="photo\tests.py" />
+    <Compile Include="photo\urls.py" />
     <Compile Include="photo\views.py" />
     <Compile Include="photo\__init__.py" />
     <Compile Include="SoftwareBake\tests.py" />
