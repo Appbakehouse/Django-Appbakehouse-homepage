@@ -46,7 +46,7 @@ urlpatterns = [
 
     # Example: /change/
     url(r'^change/$',
-        PostChangeLV.as_view(), name="change",
+        PostChangeListView.as_view(), name="change",
     ),
 
     # Example: /99/update/

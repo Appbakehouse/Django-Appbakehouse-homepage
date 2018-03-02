@@ -81,7 +81,7 @@ class PostCreateView(LoginRequiredMixin, CreateView):
         form.instance.owner = self.request.user
         return super(PostCreateView, self).form_valid(form)
 
-class PostChangeLV(LoginRequiredMixin, generic.ListView):
+class PostChangeListView(LoginRequiredMixin, generic.ListView):
     template_name = 'blog/post_change_list.html'
 
     def get_queryset(self):
