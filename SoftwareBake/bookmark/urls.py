@@ -8,6 +8,8 @@ urlpatterns = [
 
     # Class-based views for Bookmark app
     url(r'^$', IndexView.as_view(), name='index'),
+
+
     url(r'^(?P<pk>\d+)/$', DetailView.as_view(), name='detail'),
 
     # Example: /add/
